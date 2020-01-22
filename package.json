@@ -1,0 +1,17 @@
+{
+  "name": "commander-line-tool",
+  "version": "1.0.0",
+  "description": "命令行",
+  "main": "commander.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "commander"
+  ],
+  "bin": {
+    "commander_zhourongjing": "./commander.js"
+  },
+  "author": "sophiazhou",
+  "license": "ISC"
+}
