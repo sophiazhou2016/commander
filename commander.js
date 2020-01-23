@@ -3,7 +3,7 @@ var fs = require('fs'),
     path = process.cwd();
 const version = require('./package').version;
 
-console.log('path:', path);
+// console.log('path:', path);
 
 var run = function(obj) {
     if(obj[0] === '-v') {
