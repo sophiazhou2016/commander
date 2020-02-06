@@ -1,0 +1,191 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "fzlt", PingFang-Medium, PingFangSC-Regular, Helvetica;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+}
+
+select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+  background: #fff;
+}
+
+select::selection {
+  background-color: white;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+a,
+img {
+  pointer-events: auto;
+  border: 0;
+  text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  font-size: 0!important;
+  line-height: 0!important;
+  height: 0!important
+}
+
+input {
+  -webkit-user-modify: read-write-plaintext-only;
+  -webkit-appearance: none;
+  border: none;
+}
+
+input[type='button']:active,
+input:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)!important;
+  -webkit-focus-ring-color: rgba(0, 0, 0, 0)!important;
+  outline: none!important;
+  -webkit-appearance: none;
+  -webkit-user-modify: read-write-plaintext-only;
+  /*针对andriod4.0以上版本去除高亮边框*/
+}
+
+button {
+  text-transform: none;
+  -webkit-appearance: none;
+  border:none;
+}
+
+
+/*-----------去除浏览器对输入框的默认黄色内阴影-------------*/
+
+input:-webkit-autofill {
+  background-color: #FAFAFA !important;
+  background-image: none;
+  -webkit-box-shadow: 0 0 0px 1000px #FAFAFA inset;
+}

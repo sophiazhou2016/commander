@@ -1,0 +1,104 @@
+
+@mixin border-line-style($color: #DAE0EC) {
+    $border-color: $color;
+
+    .borderLeft {
+      border-left: 1px solid $border-color;
+    }
+
+    .borderTop {
+      border-top: 1px solid $border-color;
+    }
+    .borderRight {
+      border-right: 1px solid $border-color;
+    }
+
+    .borderBottom {
+      border-bottom: 1px solid $border-color;
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      .borderLeft {
+        background-size: 1px 100%;
+        background-position: left;
+        border: none;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, $border-color), color-stop(100%, $border-color));
+        background-image: -webkit-linear-gradient(left, transparent 50%, $border-color 50%, $border-color 100%);
+        background-image: linear-gradient(to right, transparent 50%, $border-color 50%, $border-color 100%);
+        background-repeat: no-repeat;
+      }
+
+      .borderRight {
+        background-size: 1px 100%;
+        background-position: right;
+        border: none;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, $border-color), color-stop(100%, $border-color));
+        background-image: -webkit-linear-gradient(left, transparent 50%, $border-color 50%, $border-color 100%);
+        background-image: linear-gradient(to right, transparent 50%, $border-color 50%, $border-color 100%);
+        background-repeat: no-repeat;
+      }
+
+      .borderTop {
+        background-size: 100% 1px;
+        background-position: top;
+        border: none;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, $border-color), color-stop(100%, $border-color));
+        background-image: -webkit-linear-gradient(top, transparent 50%, $border-color 50%, $border-color 100%);
+        background-image: linear-gradient(to bottom, transparent 50%, $border-color 50%, $border-color 100%);
+        background-repeat: no-repeat;
+      }
+
+      .borderBottom {
+        background-size: 100% 1px;
+        background-position: bottom;
+        border: none;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, $border-color), color-stop(100%, $border-color));
+        background-image: -webkit-linear-gradient(top, transparent 50%, $border-color 50%, $border-color 100%);
+        background-image: linear-gradient(to bottom, transparent 50%, $border-color 50%, $border-color 100%);
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+      .borderLeft {
+        background-size: 1px 100%;
+        background-position: left;
+        border: none;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, $border-color), color-stop(100%, $border-color));
+        background-image: -webkit-linear-gradient(left, transparent 50%, $border-color 50%, $border-color 100%);
+        background-image: linear-gradient(to right, transparent 50%, $border-color 50%, $border-color 100%);
+        background-repeat: no-repeat;
+      }
+
+      .borderRight {
+        background-size: 1px 100%;
+        background-position: right;
+        border: none;
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, $border-color), color-stop(100%, $border-color));
+        background-image: -webkit-linear-gradient(left, transparent 50%, $border-color 50%, $border-color 100%);
+        background-image: linear-gradient(to right, transparent 50%, $border-color 50%, $border-color 100%);
+        background-repeat: no-repeat;
+      }
+
+      .borderTop {
+        background-size: 100% 1px;
+        background-position: top;
+        border: none;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, $border-color), color-stop(100%, $border-color));
+        background-image: -webkit-linear-gradient(top, transparent 50%, $border-color 50%, $border-color 100%);
+        background-image: linear-gradient(to bottom, transparent 50%, $border-color 50%, $border-color 100%);
+        background-repeat: no-repeat;
+      }
+
+      .borderBottom {
+        background-size: 100% 1px;
+        background-position: bottom;
+        border: none;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, $border-color), color-stop(100%, $border-color));
+        background-image: -webkit-linear-gradient(top, transparent 50%, $border-color 50%, $border-color 100%);
+        background-image: linear-gradient(to bottom, transparent 50%, $border-color 50%, $border-color 100%);
+        background-repeat: no-repeat;
+      }
+    }
+
+}
+

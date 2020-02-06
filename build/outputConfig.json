@@ -1,0 +1,36 @@
+{
+    "key": "loanapphome",
+    "desc": "首页&账户页离线包",
+    "packageVersion": "",
+    "md5": "",
+    "pid": "Loan",
+    "platform": "3",
+    "url": "",
+    "type": "offline",
+    "extra": {
+        "packageUri": "https://loanapphome.ppdai.com",
+        "onlineUri": {
+            "appId": "1000001001",
+            "namespace": "loanhome.CMP",
+            "moduleKey": "loanhome.resource.7-9-0.page.h5.url",
+            "urlInfo": [
+                {
+                    "propertyName": "page",
+                    "propertyValue": "homeADUrl",
+                    "targetName": "url",
+                    "targetValue": ""
+                },
+                {
+                    "propertyName": "page",
+                    "propertyValue": "userADUrl",
+                    "targetName": "url",
+                    "targetValue": ""
+                }
+            ]
+        },
+        "latestUrl": [
+            "https://loanapphome.ppdai.com/latest/account/index.html",
+            "https://loanapphome.ppdai.com/latest/home/index.html"
+        ]
+    }
+}
