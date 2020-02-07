@@ -9,13 +9,16 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="applicable-device" content="mobile" />
-    {{answers}}
-    {{!-- {{#if downflag}} --}}
-
+    {{#if answers.needWebUI}}
     <script src="//widgetwebui.ppdaicdn.com/2.1.8/index.js" type="text/javascript"></script>
+    {{/if}}
+    {{#if answers.needFrame}}
     <script src="//widgetframe.ppdaicdn.com/1.0.2/frame/index.js"></script>
     <script src="//widgetframe.ppdaicdn.com/1.0.2/res/index.js"></script>
+    {{/if}}
+    {{#if answers.needTool}}
     <script src="//widgettool.ppdaicdn.com/7.15.0.1/js/common.js?a=1"></script>
+    {{/if}}
 </head>
 <body>
     <div id="app">
