@@ -1,7 +1,7 @@
 {
     "name": 
         {{#unless answers.programName}}
-            "loanapp"
+            {{answers.programName = "loanapp"}}
         {{/unless}},
     "version": "1.0.0",
     "author": "Galaxy Team",
@@ -11,7 +11,7 @@
         "dev": "vue-cli-service serve --inline --progress --config",
         {{#if answers.isOffline}}
         "build": "vue-cli-service build && npm run offline",
-        "offline": "node build/zipHash.js"
+        "offline": "node build/zipHash.js",
         {{else}}
         "build": "vue-cli-service build",
         {{/if}}
