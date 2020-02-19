@@ -1,5 +1,8 @@
 {
-    "name": "{{answers.programName || 'vue-template'}}",
+    "name": "
+        {{#unless answers.programName}}
+            {{answers.programName = 'loanapp'}}
+        {{/unless}}",
     "version": "1.0.0",
     "author": "Galaxy Team",
     "private": true,
