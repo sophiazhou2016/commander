@@ -12,7 +12,9 @@
         {{else}}
         "build": "vue-cli-service build",
         {{/if}}
-        "lint": "vue-cli-service lint",
+        {{#if answers.needLint}}
+        "lint": "vue-cli-service lint"
+        {{/if}}
     },
     "dependencies": {
         "axios": "0.18.0",
@@ -33,13 +35,15 @@
         "ali-oss": "^6.1.1",
         "@vue/cli-plugin-babel": "^3.10.0",
         "svgo": "1.3.0",
-        "@vue/cli-plugin-eslint": "^3.10.0",
         "@vue/cli-service": "^3.10.0",
+        {{#if answers.needLint}}
+        "@vue/cli-plugin-eslint": "^3.10.0",
         "@vue/eslint-config-prettier": "^5.0.0",
         "babel-eslint": "^10.0.1",
         "eslint": "^5.16.0",
         "eslint-plugin-prettier": "^3.1.0",
         "eslint-plugin-vue": "^5.0.0",
+        {{/if}}
         "filemanager-webpack-plugin": "^2.0.5",
         "less-loader": "^5.0.0",
         "node-sass": "^4.9.0",
