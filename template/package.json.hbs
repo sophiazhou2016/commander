@@ -1,10 +1,10 @@
 {
-    "name": 
-        {{#if answers.programName}}
-        {{answers.programName}}
-        {{else}}
-        "loanapp"
-        {{/if}},
+    
+    {{#if answers.programName}}
+    "name": "{{answers.programName}}",
+    {{else}}
+    "name": "loanapp",
+    {{/if}}
     "version": "1.0.0",
     "author": "Galaxy Team",
     "private": true,
