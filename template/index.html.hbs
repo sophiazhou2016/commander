@@ -16,7 +16,7 @@
     <script src="//widgetframe.ppdaicdn.com/1.0.2/frame/index.js"></script>
     <script src="//widgetframe.ppdaicdn.com/1.0.2/res/index.js"></script>
     {{/if}}
-    {{#if answers.toolChoice == 'scriptLink'}}
+    {{#ifCond answers.toolChoice '==' 'scriptLink'}}
     <script src="//widgettool.ppdaicdn.com/7.15.0.1/js/common.js?a=1"></script>
     {{/if}}
 </head>
