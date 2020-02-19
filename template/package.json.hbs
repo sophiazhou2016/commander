@@ -1,8 +1,10 @@
 {
     "name": 
-        {{#unless answers.programName}}
-            {{answers.programName = "loanapp"}}
-        {{/unless}},
+        {{#if answers.programName}}
+        {{answers.programName}}
+        {{else}}
+        "loanapp"
+        {{/if}},
     "version": "1.0.0",
     "author": "Galaxy Team",
     "private": true,
