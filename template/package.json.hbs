@@ -1,5 +1,5 @@
 {
-    "name": "loanhome",
+    "name": "{{answers.programName || 'vue-template'}}",
     "version": "1.0.0",
     "author": "Galaxy Team",
     "private": true,
@@ -43,6 +43,9 @@
         "eslint": "^5.16.0",
         "eslint-plugin-prettier": "^3.1.0",
         "eslint-plugin-vue": "^5.0.0",
+        {{/if}}
+        {{#if answers.needTest}}
+        "jest": "^24.9.0",
         {{/if}}
         "filemanager-webpack-plugin": "^2.0.5",
         "less-loader": "^5.0.0",
